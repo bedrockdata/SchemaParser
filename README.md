@@ -49,7 +49,9 @@ The schema reflects the def fields that need attention.
       }
       ```
 
-      Please use `results.push` in order to fill your desired file (i.e. example_def) which
+#### Results:
+
+      Please use results.push in order to fill your desired file (i.e. example_def) which
       holds the ADDITIONAL_FIELDS (MetaData) below this is an example of the process.. using customer
       as the field we want to test in this example.
 
