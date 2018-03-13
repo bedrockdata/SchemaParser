@@ -49,7 +49,7 @@ The schema reflects the def fields that need attention.
         ++iStr;
       },
       ```
-
+<!--
 #### Results:
 
       Please use results.push in order to fill your desired file (i.e. example_def) which
@@ -72,4 +72,4 @@ The schema reflects the def fields that need attention.
   }
   ```
 
-  Be sure to `console.log( "RESULTS", results)` in order to see the output after you call node schemaParser.js in the terminal.
+  Be sure to `console.log( "RESULTS", results)` in order to see the output after you call node schemaParser.js in the terminal. -->
