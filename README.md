@@ -32,6 +32,7 @@ The schema reflects the def fields that need attention.
   ```
   The function below will mutate the data.
   ```
+  
   for ( field in jsonData ) {
     fieldData = jsonData[ field ];
     fieldName = fieldNamePrefix + field.toUpperCase();
@@ -46,7 +47,7 @@ The schema reflects the def fields that need attention.
       while ( iStr < strings.length ) {
         strings[ iStr ] = strings[ iStr ].charAt( 0 ).toUpperCase() + strings[ iStr ].slice( 1 );
         ++iStr;
-      }
+      },
       ```
 
 #### Results:
