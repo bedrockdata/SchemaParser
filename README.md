@@ -22,16 +22,16 @@ The schema reflects the def fields that need attention.
  In our example we use is an index request from Quickbooks (dataType = customer) in order to reflect how to properly form a dataType field.
   (i.e.)
 
-```
+  ```
   fields: {
     BILL_ADDR_ID: {
       type: 'number',
       label: 'Bill Addr ID',
       path: 'BillAddr/ID'
     },
-
-  The function below function with mutate the data.
-
+  ```
+  The function below will mutate the data.
+  ```
   for ( field in jsonData ) {
     fieldData = jsonData[ field ];
     fieldName = fieldNamePrefix + field.toUpperCase();
@@ -47,7 +47,6 @@ The schema reflects the def fields that need attention.
         strings[ iStr ] = strings[ iStr ].charAt( 0 ).toUpperCase() + strings[ iStr ].slice( 1 );
         ++iStr;
       }
-
       ```
 #### Results:
 
@@ -69,6 +68,6 @@ The schema reflects the def fields that need attention.
       results.push( parseSchema( fieldName + '_', path + '/', fieldData ) );
     }
   }
-```
+  ```
 
-  Be sure to `console.log( "RESULTS", results)` in order to see the output after you call node schemaParser.js in the terminal. 
+  Be sure to `console.log( "RESULTS", results)` in order to see the output after you call node schemaParser.js in the terminal.
