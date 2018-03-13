@@ -1,0 +1,14 @@
+{
+  "name": "SchemaParser",
+  "version": "0.0.1",
+  "description": "Schema parser for connectors",
+  "main": "/.",
+  "scripts": {
+    "start": "node SchemaParser.js"
+  },
+  "author": "Jeremy Sandor (jeremy.r.sandor@gmail.com), Reginald Lewis (Reginald@bedrockdata.com)",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "request": "^2.83.0",
+  }
+}
