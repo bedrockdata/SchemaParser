@@ -30,6 +30,14 @@ The schema reflects the def fields that need attention.
       path: 'BillAddr/ID'
     },
   ```
+
+#### Results:
+
+
+  Please use `results.push` in order to fill your desired file (i.e. example_def) which
+  holds the ADDITIONAL_FIELDS (MetaData) below this is an example of the process.. using customer
+  as the field we want to test in this example.
+
   The function below will mutate the data.
 
   ```
@@ -47,16 +55,7 @@ The schema reflects the def fields that need attention.
       while ( iStr < strings.length ) {
         strings[ iStr ] = strings[ iStr ].charAt( 0 ).toUpperCase() + strings[ iStr ].slice( 1 );
         ++iStr;
-      },
-      ```
-<!--
-#### Results:
-
-      Please use results.push in order to fill your desired file (i.e. example_def) which
-      holds the ADDITIONAL_FIELDS (MetaData) below this is an example of the process.. using customer
-      as the field we want to test in this example.
-
-    ```
+      }
       results.push( schema.customer.fields = {
 
         fieldName: utils.schemaFieldName( fieldName ),
@@ -72,4 +71,4 @@ The schema reflects the def fields that need attention.
   }
   ```
 
-  Be sure to `console.log( "RESULTS", results)` in order to see the output after you call node schemaParser.js in the terminal. -->
+  Be sure to `console.log( "RESULTS", results)` in order to see the output after you call node schemaParser.js in the terminal.
